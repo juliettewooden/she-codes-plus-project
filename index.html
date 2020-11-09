@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/132dc7048a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>
-        hello
-    </h1>
+    <div class="container">
+        <img src="https://cxre.co/wp-content/uploads/2020/06/city-skyline-719982_1280.jpg.webp" alt="skyline" />
+        <h1 id="city">
+            Houston, TX
+        </h1>
+        <h2 id="city-temperature">
+            25°
+        </h2>
+        <h3>
+            day and time
+        </h3>
+        <ul id="category">
+            <li id="humidity">
+                Humidity: 21%
+            </li>
+            <li id="wind">
+                Wind: 1.5mph
+            </li>
+        </ul>
+        <form>
+            <input type="text" id="city-input" placeholder="Search new city" />
+            <input type="submit" id="search-button" value="Search city" />
+        </form>
+    </div>
+    <button class="currentButton">
+        Current Location
+    </button>
 </body>
+<script src="script.js"></script>
 </html>
