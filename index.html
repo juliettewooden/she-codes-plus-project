@@ -5,7 +5,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/132dc7048a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Stencil+Text&family=Merriweather&display=swap"
+        rel="stylesheet">
+        
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
@@ -14,39 +18,47 @@
 
 <body>
     <div class="container">
+        <div class="weather-app">
         <img src="https://cxre.co/wp-content/uploads/2020/06/city-skyline-719982_1280.jpg.webp" alt="skyline" />
         <h1 id="city">
             Houston, TX
         </h1>
-        <h2 id="city-temperature">
-            25°
-        </h2>
-        <h3>
+        <ul class="listOne">
+        <li id="city-temperature">
+            25°C
+            </li>
+        <li id="day-time">
             day and time
-        </h3>
-        <ul id="category">
+        </li>
+        <li id="description">
+            Clear
+        </li>
+        </ul>
+        <div class="row">
+            <div class="col">
+        <ul>
             <li id="humidity">
                 Humidity: 21%
             </li>
             <li id="wind">
                 Wind: 1.5mph
-            </li>
+            </li> 
         </ul>
+        </div>
+        </div>
         <form>
             <input type="text" id="city-input" placeholder="Search new city" />
             <input type="submit" id="search-button" value="Search city" />
         </form>
-    </div>
-    <button class="currentButton">
-        Current Location
-    </button>
+   </div>
+    </div> 
     <p>
     <a href="https://github.com/juliettewooden/she-codes-plus-project" target="blank">
         Open-source code 
     </a>
     by Juliette Wooden
     </p>
-
+   
 
 </body>
 <script src="script.js"></script>

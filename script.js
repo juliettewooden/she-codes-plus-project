@@ -1,10 +1,10 @@
 let now = new Date();
-let h3 = document.querySelector("h3");
-let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+let dayTime = document.querySelector("#day-time");
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[now.getDay()];
 let hour = now.getHours();
 let minutes = now.getMinutes();
-h3.innerHTML = `${day} ${hour}:${minutes}`;
+dayTime.innerHTML = `${day} ${hour}:${minutes}`;
 
 function enterCity(event) {
   event.preventDefault();
@@ -24,6 +24,8 @@ function showCurrentCityTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#city-temperature");
   currentTemp.innerHTML = `${temperature}°C`;
+  let description = document.querySelector("#description");
+  description.innerHTML = `${response.data.weather[0].description}`;
   let currentHumidity = document.querySelector("#humidity");
   currentHumidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let currentWind = document.querySelector("#wind");

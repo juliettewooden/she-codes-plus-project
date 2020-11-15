@@ -1,18 +1,10 @@
-body {
+.weather-app {
+  max-width: 500px;
+  max-height: 450px;
+  margin: 40px 0;
+  padding: 20px;
   border: 5px solid #b8dcff;
   border-radius: 4px;
-  margin-left: 350px;
-  margin-right: 350px;
-  padding: 10px;
-  background-image: linear-gradient(
-    -225deg,
-    #5d9fff 0%,
-    #b8dcff 48%,
-    #6bbbff 100%
-  );
-  background-size: 44%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 img {
   border-radius: 4px;
@@ -21,34 +13,33 @@ img {
   margin: 0 auto;
 }
 h1 {
-  font-family: "DM Sans", sans-serif;
-  text-align: left;
-  font-size: 50px;
-  color: #f4f9f4;
-}
-.hot {
-  font-size: 25px;
-}
-
-h2 {
-  font-family: "DM Sans", sans-serif;
-  text-align: left;
-  font-size: 40px;
-  color: #f4f9f4;
-}
-h3 {
+  font-weight: 400;
   text-align: center;
-  color: #f4f9f4;
+  font-size: 50px;
+  color: #838383;
 }
-ul {
-  font-family: "DM Sans", sans-serif;
-  list-style: none;
-  text-align: right;
-  padding: 0;
-  color: #f4f9f4;
+#city-temperature {
+  font-size: 35px;
+  text-align: center;
+  color: #838383;
 }
 li {
-  margin-bottom: 25px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  color: #838383;
+}
+.listOne {
+  text-align: left;
+}
+.col {
+  text-align: right;
+  bottom: 60px;
 }
 
 form {
@@ -67,14 +58,4 @@ form {
 }
 #search-button:hover {
   color: lightslategray;
-}
-
-.currentButton {
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
-  background: green;
-  color: #f4f9f4;
-  border-color: #dfdfdf;
-  bottom: 60px;
 }
