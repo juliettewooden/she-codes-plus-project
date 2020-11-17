@@ -18,6 +18,10 @@ h1 {
   font-size: 50px;
   color: #838383;
 }
+
+.temp-icon {
+  text-align: center;
+}
 #city-temperature {
   font-size: 35px;
   text-align: center;
@@ -34,9 +38,7 @@ ul {
   padding: 0;
   color: #838383;
 }
-.listOne {
-  text-align: left;
-}
+
 .col {
   text-align: right;
   bottom: 60px;
