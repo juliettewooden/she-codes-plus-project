@@ -30,4 +30,6 @@ function showCurrentCityTemp(response) {
   currentHumidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   let currentWind = document.querySelector("#wind");
   currentWind.innerHTML = `Wind: ${response.data.wind.speed}mph`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }

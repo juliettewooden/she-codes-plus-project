@@ -6,7 +6,7 @@
   border: 5px solid #b8dcff;
   border-radius: 4px;
 }
-img {
+#header-photo {
   border-radius: 4px;
   max-width: 100%;
   display: block;
